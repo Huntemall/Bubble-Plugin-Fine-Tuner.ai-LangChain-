@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "artificial intelligence (AI)",
+        "2": "productivity"
+    },
+    "demo_page": "https://docs-gpt.bubbleapps.io/",
+    "description": "Build AI Agents at Scale - No Coding Required!\n\nForget lengthy development cycles and expensive machine learning teams. With Fine-Tuner you can build sophisticated, tailored AI Agents without technical skills or coding - just bring your data and ideas 🚀\n\n🤖 Agents & Chatbots\n📚 Embeddings (semantic search)\n🧠 LLM Fine-Tuning\n\n\nHow to Use the Plugin\n\n1. Navigate to https://fine-tuner.ai and log in to your account. If you don't have an account yet, you can easily create one.\n\n2. Click on the \"API Keys\" tab located in the dashboard and generate new API key.\n\n3. Input your generated API key in the following format: \"Bearer YOUR_API_KEY\".\n\n4. You're now ready to start building your AI agents on Bubble.\n\n\n🎬 Step-by-step guide:\nhttps://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+    "image": "//s3.amazonaws.com/appforest_uf/f1679436080601x491352125328167200/Mindtune%20%284%29.png",
+    "license": "open_source",
+    "link": "http://discord.gg/fine-tuner",
+    "name": "Fine-Tuner.ai (LangChain)",
+    "plugin_instructions": "https://help.fine-tuner.ai",
+    "sa_node_version": 18
+}

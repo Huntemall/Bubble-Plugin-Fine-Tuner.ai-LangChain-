@@ -1,0 +1,1099 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AAD": {
+            "body": "{\n  \"prompt\": \"<prompt>\",\n  \"model\": \"<model>\",\n  \"temperature\": <temperature>,\n  \"max_tokens\": <tokens>\n}",
+            "body_params": {
+                "AAK": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1677538246131x983151615630377000"
+                },
+                "AAW": {
+                    "doc": "The input text for the model to complete.",
+                    "key": "prompt",
+                    "private": true,
+                    "value": "thirdSelf is a personal business platform for creative directors, social producers, and freelancers to run their own agency, art studio, or creative brand. Our members-only community is a Web3 ecosystem that rewards and propels our members forward. With your thirdSelf membership, you can get hired with one click, manage projects and clients, and earn more with low to zero fees. All in one beautiful place."
+                },
+                "ABm": {
+                    "allow_blank": true,
+                    "doc": "Controls the randomness of the output. Higher values result in more diverse completions, while lower values make the output more deterministic.",
+                    "key": "temperature",
+                    "private": true,
+                    "value": "0.7"
+                },
+                "ABo": {
+                    "allow_blank": true,
+                    "doc": "Maximum number of tokens in the generated response.",
+                    "key": "tokens",
+                    "private": true,
+                    "value": "256"
+                }
+            },
+            "doc_link": "https://docs.fine-tuner.ai",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "LLM Fine-Tuning | Inference",
+            "publish_as": "action",
+            "rank": 15,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AAD",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAD\":{\"caption\":\"Fine-Tuning | Interact\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.completion\":{\"ret_value\":\"text\",\"caption\":\"body response completion\",\"sample_value\":\" FEATURES:\\n\\nOne click hiring: client can hire members with one click\\nClient dashboard: client can manage all their projects and members in one place\\nTask management system: members and client can add tasks and manage workflow\\nPayments system: members get paid with zero platform fee\\nTeam management system: members and client can add and manage team members\\nReview system: members and client can leave reviews for each other\\nPortfolio system: members can showcase their work and experience\\nSearch system: client can search and find members based on their needs\\n\\nUSER TYPES DESCRIPTION:\\n\\nClient\\n\\nClient can post a project and hire a member\\nClient can add team members and manage them\\nClient can leave a review for the member\\nClient can search and find the members based on their needs\\n\\nMember\\n\\nMember can create a portfolio and showcase their work and experience\\nMember can add team members and manage them\\nMember can leave a review for the client\\nMember can apply for the project and get hired with one click\\n\\nAdmin\\n\\nAdmin can manage the platform fee and set it to zero\\nAdmin can manage members, clients, and projects\\n\\nThirdSelf was founded in 2015 by social entrepreneur and visionary artist Svetlana Fedor\",\"path\":[\"body\",\"response\",\"completion\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"completion\\\\\\\": \\\\\\\" FEATURES:\\\\\\\\n\\\\\\\\nOne click hiring: client can hire members with one click\\\\\\\\nClient dashboard: client can manage all their projects and members in one place\\\\\\\\nTask management system: members and client can add tasks and manage workflow\\\\\\\\nPayments system: members get paid with zero platform fee\\\\\\\\nTeam management system: members and client can add and manage team members\\\\\\\\nReview system: members and client can leave reviews for each other\\\\\\\\nPortfolio system: members can showcase their work and experience\\\\\\\\nSearch system: client can search and find members based on their needs\\\\\\\\n\\\\\\\\nUSER TYPES DESCRIPTION:\\\\\\\\n\\\\\\\\nClient\\\\\\\\n\\\\\\\\nClient can post a project and hire a member\\\\\\\\nClient can add team members and manage them\\\\\\\\nClient can leave a review for the member\\\\\\\\nClient can search and find the members based on their needs\\\\\\\\n\\\\\\\\nMember\\\\\\\\n\\\\\\\\nMember can create a portfolio and showcase their work and experience\\\\\\\\nMember can add team members and manage them\\\\\\\\nMember can leave a review for the client\\\\\\\\nMember can apply for the project and get hired with one click\\\\\\\\n\\\\\\\\nAdmin\\\\\\\\n\\\\\\\\nAdmin can manage the platform fee and set it to zero\\\\\\\\nAdmin can manage members, clients, and projects\\\\\\\\n\\\\\\\\nThirdSelf was founded in 2015 by social entrepreneur and visionary artist Svetlana Fedor\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_generate",
+            "wrap_error": true
+        },
+        "AAe": {
+            "0": "A",
+            "1": "A",
+            "2": "d",
+            "body": "{\n  \"prompt\": \"<prompt>\",\n  \"model\": \"<model>\"\n}",
+            "body_params": {
+                "AAK": {
+                    "key": "model",
+                    "private": true,
+                    "value": "davinci:ft-personal:sadqwd-2023-03-16-18-10-44"
+                },
+                "AAW": {
+                    "key": "prompt",
+                    "private": true,
+                    "value": "test"
+                }
+            },
+            "doc_link": "https://docs.fine-tuner.ai",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "LLM Fine-Tuning | Get training data",
+            "params": {
+                "AAf": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1677538246131x983151615630377000"
+                }
+            },
+            "publish_as": "data",
+            "rank": 16,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AAe",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAe\":{\"caption\":\"Fine-Tuning | Get training data\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.Tables\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AAe.body.response.Tables\",\"caption\":\"body response Tables\",\"path\":[\"body\",\"response\",\"Tables\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"(value too large to save 58730 bytes)\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.AAe.body.response.Tables\":{\"caption\":\"Fine-Tuning | Get training data body response Table\",\"fields\":{\"_p_Modified Date\":{\"ret_value\":\"number\",\"caption\":\"Modified Date\",\"sample_value\":1677540319970,\"path\":[\"Modified Date\"]},\"_p_Created Date\":{\"ret_value\":\"number\",\"caption\":\"Created Date\",\"sample_value\":1677538246833,\"path\":[\"Created Date\"]},\"_p_Created By\":{\"ret_value\":\"text\",\"caption\":\"Created By\",\"sample_value\":\"1672658414106x854896841142414500\",\"path\":[\"Created By\"]},\"_p_Prompt\":{\"ret_value\":\"text\",\"caption\":\"Prompt\",\"sample_value\":\"The project scope is to develop a web-based freelance marketplace platform that allows clients to post jobs and freelancers to apply for them. The platform should have a user dashboard, a landing page, and a messaging system to enable communication between employers and freelancers. The app should also have an admin dashboard that provides the ability to manage user accounts, see total balance, and pending payments.\",\"path\":[\"Prompt\"]},\"_p_Completion\":{\"ret_value\":\"text\",\"caption\":\"Completion\",\"sample_value\":\"FEATURES:\\n\\nUser registration and authentication system\\nUser dashboard for clients and freelancers\\nLanding page to showcase the platform\\nPayment system to allow clients to pay freelancers for work accomplished\\nMessaging system for communication between clients and freelancers\\nAdvanced filtering system to enable clients and freelancers to find the best jobs and talent\\nReview system for clients and freelancers to leave feedback about each other\\nAdmin dashboard to manage user accounts, change platform fee, add/manage categories and skills, and view/ban users\\nFully responsive design to ensure compatibility across all devices\\n\\nUSER TYPES DESCRIPTION:\\n\\nClients (Employers)\\n\\nCreate and manage job postings\\nUse advanced filters to find the best freelancers\\nSave and manage the best freelancers for future jobs\\nCommunicate with freelancers via the messaging system\\nPay freelancers for work accomplished\\nLeave reviews for freelancers after the job is completed\\n\\nFreelancers\\n\\nCreate and manage profiles to showcase their skills and experience\\nApply for jobs and communicate with clients via the messaging system\\nUse advanced filters to find the best jobs\\nUpdate their education details, skills, experience, and portfolio\\nTurn on/off the timer when starting/stopping accomplishing the job\\nLeave reviews for employers after the project is completed\\n\\nAdmin\\n\\nManage user accounts, view/ban users\\nChange the platform fee\\nView the total balance and pending payments\\nAdd/manage categories and skills to the platform\",\"path\":[\"Completion\"]},\"_p_AI_FineTune\":{\"ret_value\":\"text\",\"caption\":\"AI_FineTune\",\"sample_value\":\"1677538246131x983151615630377000\",\"path\":[\"AI_FineTune\"]},\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"1677538246131x443007163107901400\",\"path\":[\"_id\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_get_data",
+            "wrap_error": true
+        },
+        "ABq": {
+            "0": "A",
+            "1": "B",
+            "2": "p",
+            "body": "{\n  \"prompt\": \"<text>\",\n  \"model\": \"<model>\",\n  \"top_K\": <top_K>\n}",
+            "body_params": {
+                "AAK": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1686603232679x510744632828443260"
+                },
+                "ACC": {
+                    "doc": "Text for similarity search.",
+                    "key": "text",
+                    "private": true,
+                    "value": "In publishing and graphic design."
+                },
+                "AFZ": {
+                    "doc": "The number of results to return for each query (defaults to 3).",
+                    "key": "top_K",
+                    "private": true,
+                    "value": "3"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Vectorstore | Similarity Search",
+            "publish_as": "action",
+            "rank": 12,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.ABq",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABq\":{\"caption\":\"Embeddings | Similarity search\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.matches\":{\"ret_value\":\"list.text\",\"caption\":\"body response matches\",\"sample_value\":\"LLM Fine-T uning with  \\nNo-Code 🎮\\n\",\"path\":[\"body\",\"response\",\"matches\"]},\"_p_body.response.score\":{\"ret_value\":\"list.number\",\"caption\":\"body response score\",\"sample_value\":0.760849893,\"path\":[\"body\",\"response\",\"score\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"matches\\\\\\\": [\\\\n            \\\\\\\"LLM Fine-T uning with  \\\\\\\\nNo-Code 🎮\\\\\\\\n\\\\\\\",\\\\n            \\\\\\\"Source: https://twitter .com/pwang_szn/status/1664210293428490240 \\\\\\\\nFine-T uning \\\\\\\\nFine-T uning vs. Semantic search \\\\\\\",\\\\n            \\\\\\\"Source: https://twitter .com/pwang_szn/status/1664210293428490240 \\\\\\\\nFine-T uning \\\\\\\\nBasics of Fine-Tuning \\\\\\\"\\\\n        ],\\\\n        \\\\\\\"score\\\\\\\": [\\\\n            0.760849893,\\\\n            0.743468404,\\\\n            0.739844382\\\\n        ]\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_embeddings_query",
+            "wrap_error": true
+        },
+        "ACl": {
+            "0": "A",
+            "1": "C",
+            "2": "k",
+            "body": "{\n    \"query\": \"<query>\",\n    \"model\": \"<model>\",\n    \"chain_type\": \"<chain_type>\",\n    \"temperature\": <temperature>,\n    \"user_id\": \"<user_id>\",\n    \"llm\": \"<llm>\"\n\n\n\n}",
+            "body_params": {
+                "ACn": {
+                    "doc": "The question to pass to the model.",
+                    "key": "query",
+                    "private": true,
+                    "value": "whats eigenlyaer?"
+                },
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1686695786330x426410203270244800"
+                },
+                "ADl": {
+                    "allow_blank": false,
+                    "doc": "\"stuff\", \"map_reduce\", or \"refine\":\n\nStuff - Inputs all data into one prompt, limited by context length and unsuitable for larger documents.\n\nMap_reduce - Processes data chunks and combines outputs, scalable for large documents but may lose information.\n\nRefine - Iteratively processes documents, retains context, but more language model calls and no parallelization.",
+                    "key": "chain_type",
+                    "private": true,
+                    "value": "stuff"
+                },
+                "ADm": {
+                    "allow_blank": true,
+                    "doc": "Controls the randomness of the output. Higher values result in more diverse completions, while lower values make the output more deterministic (defaults to 0).",
+                    "key": "temperature",
+                    "private": true,
+                    "value": "0"
+                },
+                "ADn": {
+                    "allow_blank": true,
+                    "doc": "A unique string identifier that you can pass to distinguish your individual users and their sessions.",
+                    "key": "user_id",
+                    "private": true,
+                    "value": ""
+                },
+                "AEv": {
+                    "allow_blank": true,
+                    "doc": "Currently \"openai\" or \"anthropic\" (defaults to \"openai\").",
+                    "key": "llm",
+                    "private": true,
+                    "value": "anthropic"
+                }
+            },
+            "doc_link": "https://docs.fine-tuner.ai",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Doc QA | Inference",
+            "publish_as": "action",
+            "rank": 19,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.ACl",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACl\":{\"caption\":\"Chatbot | Interact\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.answer\":{\"ret_value\":\"text\",\"caption\":\"body response answer\",\"sample_value\":\"I apologize, but I do not have enough context to determine what \\\"eigenlyaer\\\" refers to. Can you provide some more details or clarify your question?\",\"path\":[\"body\",\"response\",\"answer\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"answer\\\\\\\": \\\\\\\"I apologize, but I do not have enough context to determine what \\\\\\\\\\\\\\\"eigenlyaer\\\\\\\\\\\\\\\" refers to. Can you provide some more details or clarify your question?\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_qa",
+            "wrap_error": true
+        },
+        "ADa": {
+            "0": "A",
+            "1": "D",
+            "2": "Z",
+            "body": "{\n    \"model\": \"<model>\",\n    \"doc_type\": \"<doc_type>\",\n    \"doc_string\": \"<doc_string>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1690059925437x758509336389815200"
+                },
+                "ADc": {
+                    "doc": "Choose one of the following types: \"url\" for a web address, \"file\" for a local file, or \"text\" for plain text content.\n\nFor files the following formats are possible: pdf, csv, pptx, docx, txt.",
+                    "key": "doc_type",
+                    "private": true,
+                    "value": "url"
+                },
+                "ADd": {
+                    "doc": "Provide a website link, a direct file link, or a plain text input.",
+                    "key": "doc_string",
+                    "private": true,
+                    "value": "https://notion.so"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Vectorstore |  Upload",
+            "publish_as": "action",
+            "rank": 10,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.ADa",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ADa\":{\"caption\":\"Vectors | Upload\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.status\":{\"ret_value\":\"text\",\"caption\":\"body response status\",\"sample_value\":\"ok\",\"path\":[\"body\",\"response\",\"status\"]},\"_p_body.response.source_id\":{\"ret_value\":\"text\",\"caption\":\"body response source_id\",\"sample_value\":\"1690059965357x721932620869680800\",\"path\":[\"body\",\"response\",\"source_id\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"status\\\\\\\": \\\\\\\"ok\\\\\\\",\\\\n        \\\\\\\"source_id\\\\\\\": \\\\\\\"1690059965357x721932620869680800\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_embeddings_upsert",
+            "wrap_error": true
+        },
+        "ADt": {
+            "0": "A",
+            "1": "D",
+            "2": "s",
+            "body": "{\n  \"model\": \"<model>\",\n  \"field 1\": \"<prompt>\",\n  \"field 2\": \"<completion>\"\n}",
+            "body_params": {
+                "AAK": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1674569396317x970065380189405200"
+                },
+                "ADy": {
+                    "doc": "Input text prompt for the training data.",
+                    "key": "prompt",
+                    "private": true,
+                    "value": "test1"
+                },
+                "AEA": {
+                    "doc": "Completion text corresponding to the prompts.",
+                    "key": "completion",
+                    "private": true,
+                    "value": "test2"
+                }
+            },
+            "doc_link": "https://docs.fine-tuner.ai",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "LLM Fine-Tuning | Create training data",
+            "publish_as": "action",
+            "rank": 17,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.ADt",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ADt\":{\"caption\":\"Fine-Tuning | Create training data\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/create_data",
+            "wrap_error": true
+        },
+        "AEJ": {
+            "0": "A",
+            "1": "E",
+            "2": "I",
+            "body": "{\n    \"query\": \"<query>\",\n    \"model\": \"<model>\",\n    \"url\": \"<url>\"\n\n\n}",
+            "body_params": {
+                "ACn": {
+                    "doc": "The question to pass to the model.",
+                    "key": "query",
+                    "private": true,
+                    "value": "plot a chart of stock prices over time"
+                },
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1685483896988x262703203509862400"
+                },
+                "AEN": {
+                    "doc": "The URL of the csv file.",
+                    "key": "url",
+                    "private": true,
+                    "value": "https://e32d51af3de97804b3f8dcfcb7e70a04.cdn.bubble.io/f1678978212752x285062987013851900/Untitled%20spreadsheet%20-%20Sheet1%20%2814%29.csv"
+                }
+            },
+            "doc_link": "https://docs.fine-tuner.ai",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "CSV Agent | Inference",
+            "publish_as": "action",
+            "rank": 18,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AEJ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AEJ\":{\"caption\":\"CSV Agent | Interact\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.answer\":{\"ret_value\":\"text\",\"caption\":\"body response answer\",\"sample_value\":\"I'm sorry, I cannot directly plot a chart as I am an AI language model. However, I can guide you on how to create a chart of stock prices over time using various tools or platforms like Microsoft Excel, Google Sheets, or financial websites like Yahoo Finance. Let me know if you need assistance with any specific tool or platform, and I'll be happy to help!\",\"path\":[\"body\",\"response\",\"answer\"]},\"_p_body.response.url\":{\"ret_value\":\"text\",\"caption\":\"body response url\",\"sample_value\":\"https://storage.googleapis.com/fine-tuner-pandas-ai/1afd40e2-96a1-47bb-8fde-fc5a78ebd1a2.png\",\"path\":[\"body\",\"response\",\"url\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"answer\\\\\\\": \\\\\\\"I'm sorry, I cannot directly plot a chart as I am an AI language model. However, I can guide you on how to create a chart of stock prices over time using various tools or platforms like Microsoft Excel, Google Sheets, or financial websites like Yahoo Finance. Let me know if you need assistance with any specific tool or platform, and I'll be happy to help!\\\\\\\",\\\\n        \\\\\\\"url\\\\\\\": \\\\\\\"https://storage.googleapis.com/fine-tuner-pandas-ai/1afd40e2-96a1-47bb-8fde-fc5a78ebd1a2.png\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_csv",
+            "wrap_error": true
+        },
+        "AEl": {
+            "0": "A",
+            "1": "E",
+            "2": "k",
+            "body": "{\n    \"model\": \"<model>\",\n    \"user_id\": \"<user_id>\",\n    \"query\": \"<query>\"\n\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1694437494427x570202874199408640"
+                },
+                "ADn": {
+                    "allow_blank": false,
+                    "doc": "A unique string identifier that you can pass to distinguish your individual users and their sessions.",
+                    "key": "user_id",
+                    "private": true,
+                    "value": "demo 1"
+                },
+                "AEq": {
+                    "doc": "The question to pass to the model.",
+                    "key": "query",
+                    "private": true,
+                    "value": "Hey there!"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Inference",
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AEl",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AEl\":{\"caption\":\"Agent | Inference\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.answer\":{\"ret_value\":\"text\",\"caption\":\"body response answer\",\"sample_value\":\"Great, with a loan amount of 500k and a term of 10 years, we can definitely find a suitable option for you. Let's discuss further details to ensure we find the best fit for your needs. \",\"path\":[\"body\",\"response\",\"answer\"]},\"_p_body.response.recommendations\":{\"ret_value\":\"list.text\",\"caption\":\"body response recommendations\",\"sample_value\":\"\\\"Max Loan Amount\\\": \\\"20000000\\\"\",\"path\":[\"body\",\"response\",\"recommendations\"]},\"_p_body.response.conversation_stage\":{\"ret_value\":\"text\",\"caption\":\"body response conversation_stage\",\"sample_value\":\"1\",\"path\":[\"body\",\"response\",\"conversation_stage\"]},\"_p_body.response.conversation_stage_description\":{\"ret_value\":\"text\",\"caption\":\"body response conversation_stage_description\",\"sample_value\":\"demo\",\"path\":[\"body\",\"response\",\"conversation_stage_description\"]},\"_p_body.response.resources\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AEl.body.response.resources\",\"caption\":\"body response resources\",\"path\":[\"body\",\"response\",\"resources\"]},\"_p_body.response.tools_used\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AEl.body.response.tools_used\",\"caption\":\"body response tools_used\",\"path\":[\"body\",\"response\",\"tools_used\"]},\"_p_body.response.sources\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AEl.body.response.sources\",\"caption\":\"body response sources\",\"path\":[\"body\",\"response\",\"sources\"]}}},\"plugin_api.AEl.body.response.resources\":{\"caption\":\"Agent | Inference body response resource\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"audio\",\"path\":[\"type\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://storage.googleapis.com/audio-files-text-to-speech/1be04f4d-76ec-4170-b620-d7ff76d14def.wav\",\"path\":[\"url\"]}}},\"plugin_api.AEl.body.response.tools_used\":{\"caption\":\"Agent | Inference body response tools_used\",\"fields\":{\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Browser\",\"path\":[\"name\"]},\"_p_payload.method\":{\"ret_value\":\"text\",\"caption\":\"payload method\",\"sample_value\":\"search_engine\",\"path\":[\"payload\",\"method\"]},\"_p_payload.query\":{\"ret_value\":\"text\",\"caption\":\"payload query\",\"sample_value\":\"What is the definition of eigenlayer?\",\"path\":[\"payload\",\"query\"]},\"_p_payload.result\":{\"ret_value\":\"text\",\"caption\":\"payload\",\"sample_value\":\"EigenLayer is a middleware that is being built on the Ethereum network to commoditize decentralized trust. Protocols that look to integrate EigenLayer will be able to leverage Ethereum's highly secure trust network. EigenLayer is an innovative protocol built on the Ethereum blockchain, introducing the concept of 'restaking'. Restaking is a novel primitive in crypto-economic security, which allows for the reuse of staked ETH or liquid staking tokens (LST) on the consensus layer. EigenLayer is a restaking protocol for Ethereum that enables existing ETH stakers to opt in to validating new software modules (e.g. consensus protocols, data availability layers, oracles,... ⚙️ Eigenlayer is a middleware protocol that introduces restaking. Eigenlayer allows the reuse of ETH in staking to secure other protocols on Ethereum. 🧑‍💻 The technological pillars behind Eigenlayer are pooled security through restaking and an open marketplace mechanism. Summary EigenLayer is a protocol built on Ethereum that introduces restaking, a new primitive in cryptoeconomic security. This primitive enables the rehypothetication of $ETH on the consensus layer.\",\"path\":[\"payload\",\"result\"]}}},\"plugin_api.AEl.body.response.sources\":{\"caption\":\"Agent | Inference body response source\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"https://e32d51af3de97804b3f8dcfcb7e70a04.cdn.bubble.io/f1693838324765x325002871815536240/whitepaper.pdf\",\"path\":[\"source\"]},\"_p_page_row\":{\"ret_value\":\"text\",\"caption\":\"page_row\",\"sample_value\":\"0\",\"path\":[\"page_row\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_inference",
+            "wrap_error": true
+        },
+        "AEz": {
+            "0": "A",
+            "1": "E",
+            "2": "y",
+            "body": "{\n    \"source_id\": \"<source_id>\"\n\n}",
+            "body_params": {
+                "AFE": {
+                    "doc": "The identifier of the uploaded source data (provided by the \"Upload vectors\" API call).",
+                    "key": "source_id",
+                    "private": true,
+                    "value": "1690059965357x721932620869680800"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Vectorstore | Delete",
+            "publish_as": "action",
+            "rank": 11,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AEz",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AEz\":{\"caption\":\"Vectors | Delete\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_embeddings_remove",
+            "wrap_error": true
+        },
+        "AFP": {
+            "0": "A",
+            "1": "F",
+            "2": "O",
+            "body": "{\n    \"model\": \"<model>\"\n\n}",
+            "body_params": {
+                "AFN": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1686480704679x208373637526174200"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Agent | Widget Code",
+            "params": {
+                "AFQ": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1686695856658x880173777914715000"
+                }
+            },
+            "publish_as": "action",
+            "rank": 13,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AFP",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AFP\":{\"caption\":\"Chatbot | Widget Code\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.embed_code\":{\"ret_value\":\"text\",\"caption\":\"body response embed_code\",\"sample_value\":\"<body>\\n    <script>\\n      window.fineTunerChatbot = {\\n        config: {\\n          apiToken: \\\"naAYUheB23eDp36GEeLj7BXsLTZuxYiOpuBJ2DiqgsU7H2eB\\\",\\n          modelId: \\\"1686695856658x880173777914715000\\\",\\n          chainType: \\\"stuff\\\",\\n          temperature: 0,\\n        }\\n      };\\n    </script>\\n    <script src=\\\"https://chatagi.web.app/chatbot.js\\\"></script>\\n    <style>\\n      .rsc-header {\\n        background: #000000;\\n        font-family: \\\"Lucida Sans\\\", \\\"Lucida Sans Regular\\\", \\\"Lucida Grande\\\",\\n          \\\"Lucida Sans Unicode\\\", Geneva, Verdana, sans-serif;\\n      }\\n      .rsc-ts-bubble {\\n        background: #000000;\\n        color: #ffffff;\\n      }\\n      .rsc-content {\\n        font-family: \\\"Lucida Sans\\\", \\\"Lucida Sans Regular\\\", \\\"Lucida Grande\\\",\\n          \\\"Lucida Sans Unicode\\\", Geneva, Verdana, sans-serif;\\n      }\\n      .rsc-float-button {\\n        background-color: #000000;\\n      }\\n\\n      .rsc{z-index:9999!important;}\\n        \\n        #fine-tuner-chatbot-container{z-index: 1000;}\\n\\n    </style>\\n</body>\",\"path\":[\"body\",\"response\",\"embed_code\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"embed_code\\\\\\\": \\\\\\\"<body>\\\\\\\\n    <script>\\\\\\\\n      window.fineTunerChatbot = {\\\\\\\\n        config: {\\\\\\\\n          apiToken: \\\\\\\\\\\\\\\"naAYUheB23eDp36GEeLj7BXsLTZuxYiOpuBJ2DiqgsU7H2eB\\\\\\\\\\\\\\\",\\\\\\\\n          modelId: \\\\\\\\\\\\\\\"1686695856658x880173777914715000\\\\\\\\\\\\\\\",\\\\\\\\n          chainType: \\\\\\\\\\\\\\\"stuff\\\\\\\\\\\\\\\",\\\\\\\\n          temperature: 0,\\\\\\\\n        }\\\\\\\\n      };\\\\\\\\n    </script>\\\\\\\\n    <script src=\\\\\\\\\\\\\\\"https://chatagi.web.app/chatbot.js\\\\\\\\\\\\\\\"></script>\\\\\\\\n    <style>\\\\\\\\n      .rsc-header {\\\\\\\\n        background: #000000;\\\\\\\\n        font-family: \\\\\\\\\\\\\\\"Lucida Sans\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"Lucida Sans Regular\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"Lucida Grande\\\\\\\\\\\\\\\",\\\\\\\\n          \\\\\\\\\\\\\\\"Lucida Sans Unicode\\\\\\\\\\\\\\\", Geneva, Verdana, sans-serif;\\\\\\\\n      }\\\\\\\\n      .rsc-ts-bubble {\\\\\\\\n        background: #000000;\\\\\\\\n        color: #ffffff;\\\\\\\\n      }\\\\\\\\n      .rsc-content {\\\\\\\\n        font-family: \\\\\\\\\\\\\\\"Lucida Sans\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"Lucida Sans Regular\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"Lucida Grande\\\\\\\\\\\\\\\",\\\\\\\\n          \\\\\\\\\\\\\\\"Lucida Sans Unicode\\\\\\\\\\\\\\\", Geneva, Verdana, sans-serif;\\\\\\\\n      }\\\\\\\\n      .rsc-float-button {\\\\\\\\n        background-color: #000000;\\\\\\\\n      }\\\\\\\\n\\\\\\\\n      .rsc{z-index:9999!important;}\\\\\\\\n        \\\\\\\\n        #fine-tuner-chatbot-container{z-index: 1000;}\\\\\\\\n\\\\\\\\n    </style>\\\\\\\\n</body>\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_widget_code",
+            "wrap_error": true
+        },
+        "AFS": {
+            "0": "A",
+            "1": "F",
+            "2": "R",
+            "body": "{\n    \"model\": \"<model>\",\n    \"background_color\": \"<background_color>\",\n    \"message_bubble_bg_color\": \"<message_bubble_bg_color>\",\n    \"message_bubble_font_color\": \"<message_bubble_font_color>\"\n}",
+            "body_params": {
+                "AFT": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1686695856658x880173777914715000"
+                },
+                "AFU": {
+                    "doc": "Background color of the widget as hex (i.e. #000000).",
+                    "key": "background_color",
+                    "private": true,
+                    "value": "#000000"
+                },
+                "AFV": {
+                    "doc": "Background color of widget's message bubble as hex (i.e. #000000).",
+                    "key": "message_bubble_bg_color",
+                    "private": true,
+                    "value": "#ffffff"
+                },
+                "AFW": {
+                    "doc": "Font color of widget's message bubble as hex (i.e. #000000).",
+                    "key": "message_bubble_font_color",
+                    "private": true,
+                    "value": "#ffffff"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Widget Update",
+            "publish_as": "action",
+            "rank": 14,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AFS",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AFS\":{\"caption\":\"Chatbot | Widget Update\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_widget_update",
+            "wrap_error": true
+        },
+        "AGA": {
+            "0": "A",
+            "1": "F",
+            "2": "z",
+            "body": "{\n    \"model\": \"<model>\",\n    \"user_id\": \"<user_id>\",\n    \"query\": \"<query>\"\n\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1690052107242x424346776758648800"
+                },
+                "ADn": {
+                    "allow_blank": false,
+                    "doc": "A unique string identifier that you can pass to distinguish your individual users and their sessions.",
+                    "key": "user_id",
+                    "private": true,
+                    "value": "user_id"
+                },
+                "AEq": {
+                    "doc": "The question to pass to the model.",
+                    "key": "query",
+                    "private": true,
+                    "value": "Hey there!"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Agent | Create (Brand-Centric)",
+            "params": {
+                "AGs": {
+                    "allow_blank": true,
+                    "doc": "(optional) Models created via the API will automatically be assigned to the default workspace, unless a specific workspace parameter is provided. Workspace can be set as default in Fine-Tuner dashboard under Settings -> Workspace.",
+                    "key": "workspace_id",
+                    "optional": true,
+                    "private": true,
+                    "value": "1687135543812x694317602230583900"
+                },
+                "AGt": {
+                    "allow_blank": true,
+                    "key": "name",
+                    "optional": true,
+                    "private": true,
+                    "value": "demo"
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGA",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AGA\":{\"caption\":\"Agent | Create (Brand-Centric)\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.model\":{\"ret_value\":\"text\",\"caption\":\"body response model\",\"sample_value\":\"1694105647939x828019959682214000\",\"path\":[\"body\",\"response\",\"model\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"model\\\\\\\": \\\\\\\"1694105647939x828019959682214000\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_create",
+            "wrap_error": true
+        },
+        "AGC": {
+            "0": "A",
+            "1": "G",
+            "2": "B",
+            "body": "{\n    \"model\": \"<model>\",\n    \"temperature\": <temperature>,\n    \"llm\": \"<llm>\",\n    \"company_business\": \"<company_business>\",\n    \"company_name\": \"<company_name>\",\n    \"company_values\": \"<company_values>\",\n    \"conversation_purpose\": \"<conversation_purpose>\",\n    \"conversation_type\": \"<conversation_type>\",\n    \"salesperson_name\": \"<agentn_name>\",\n    \"salesperson_role\": \"<agent_role>\",\n    \"user_type\": \"<user_type>\",\n    \"image\": \"<image_url>\",\n    \"name\": \"<name>\"        \n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1694105647939x828019959682214000"
+                },
+                "AGD": {
+                    "allow_blank": false,
+                    "doc": "",
+                    "key": "user_type",
+                    "private": true,
+                    "value": "customer"
+                },
+                "AGN": {
+                    "allow_blank": false,
+                    "doc": "",
+                    "key": "conversation_type",
+                    "private": true,
+                    "value": "call"
+                },
+                "AGP": {
+                    "allow_blank": false,
+                    "doc": "",
+                    "key": "conversation_purpose",
+                    "private": true,
+                    "value": "find out whether they are looking to achieve better sleep via buying a premier mattress."
+                },
+                "AGQ": {
+                    "allow_blank": false,
+                    "doc": "",
+                    "key": "company_values",
+                    "private": true,
+                    "value": "Our mission at Sleep Haven is to help people achieve a better night's sleep by providing them with the best possible sleep solutions. We believe that quality sleep is essential to overall health and well-being, and we are committed to helping our customers achieve optimal sleep by offering exceptional products and customer service."
+                },
+                "AGR": {
+                    "allow_blank": false,
+                    "doc": "",
+                    "key": "company_name",
+                    "private": true,
+                    "value": "Sleep Haven"
+                },
+                "AGS": {
+                    "allow_blank": false,
+                    "doc": "",
+                    "key": "company_business",
+                    "private": true,
+                    "value": "Sleep Haven is a premium mattress company that provides customers with the most comfortable and supportive sleeping experience possible. We offer a range of high-quality mattresses, pillows, and bedding accessories that are designed to meet the unique needs of our customers."
+                },
+                "AGT": {
+                    "allow_blank": true,
+                    "doc": "One of the following:\n- anthropic\"\n- claude-2\"\n- gpt-3.5-turbo\n- gpt-4\n- gpt-3.5-turbo-0613\n- gpt-4-0613\n- gpt-3.5-turbo-16k\n\nDefaults to \"gpt-3.5-turbo-0613\".",
+                    "key": "llm",
+                    "private": true,
+                    "value": "anthropic"
+                },
+                "AGU": {
+                    "allow_blank": true,
+                    "doc": "Controls the randomness of the output. Higher values result in more diverse completions, while lower values make the output more deterministic (defaults to 0).",
+                    "key": "temperature",
+                    "private": true,
+                    "value": "0.3"
+                },
+                "AGk": {
+                    "key": "agent_role",
+                    "private": true,
+                    "value": "Business Development Representative"
+                },
+                "AGl": {
+                    "key": "agentn_name",
+                    "private": true,
+                    "value": "Ted Lasso"
+                },
+                "AHl": {
+                    "allow_blank": true,
+                    "key": "image_url",
+                    "private": true,
+                    "value": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F506c3aafb45ff073812bdd978c05f8c1.cdn.bubble.io%2Ff1694093513704x616487902918003200%2FF0Xc9QeWAAE6dt4.png?w=96&h=96&auto=compress&dpr=1&fit=max"
+                },
+                "AHm": {
+                    "allow_blank": true,
+                    "key": "name",
+                    "private": true,
+                    "value": "test"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Update (Brand-Centric)",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGC",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AGC\":{\"caption\":\"Agent | Update (Brand-Centric)\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_edit",
+            "wrap_error": true
+        },
+        "AGd": {
+            "0": "A",
+            "1": "G",
+            "2": "c",
+            "body": "{\n    \"model\": \"<model>\",\n    \"content\": \"<content>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1692044741304x238360342082232670"
+                },
+                "AGf": {
+                    "key": "content",
+                    "private": true,
+                    "value": "Introduction: Start the conversation by introducing yourself and your company. Be polite and respectful while keeping the tone of the conversation professional. Your greeting should be welcoming. Always clarify in your greeting the reason why you are contacting the prospect."
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Stage Create",
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGd",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AGd\":{\"caption\":\"Agent | Stage Create\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.stage_id\":{\"ret_value\":\"text\",\"caption\":\"body response stage_id\",\"sample_value\":\"1692050103060x814203154116900000\",\"path\":[\"body\",\"response\",\"stage_id\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"stage_id\\\\\\\": \\\\\\\"1692050103060x814203154116900000\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_stage_create",
+            "wrap_error": true
+        },
+        "AGn": {
+            "0": "A",
+            "1": "G",
+            "2": "m",
+            "body": "{\n    \"model\": \"<model>\",\n    \"stage_id\": \"<stage_id>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1692044741304x238360342082232670"
+                },
+                "AGo": {
+                    "doc": "The identifier of the conversation stage.",
+                    "key": "stage_id",
+                    "private": true,
+                    "value": "1692050096489x936489306349401100"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Stage Delete",
+            "publish_as": "action",
+            "rank": 6,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGn",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AGn\":{\"caption\":\"Agent | Stage Delete\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_stage_delete",
+            "wrap_error": true
+        },
+        "AGv": {
+            "0": "A",
+            "1": "G",
+            "2": "u",
+            "body": "{\n    \"model\": \"<model>\",\n    \"name\": \"<name>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1692044741304x238360342082232670"
+                },
+                "AGz": {
+                    "doc": "Currently possible options:\n- browser\n- linkedin",
+                    "key": "name",
+                    "private": true,
+                    "value": "browser"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Tools Add",
+            "publish_as": "action",
+            "rank": 7,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGv",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AGv\":{\"caption\":\"Agent | Tools Add\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_tool_enable",
+            "wrap_error": true
+        },
+        "AGx": {
+            "0": "A",
+            "1": "G",
+            "2": "w",
+            "body": "{\n    \"model\": \"<model>\",\n    \"name\": \"<name>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1692044741304x238360342082232670"
+                },
+                "AHF": {
+                    "key": "name",
+                    "private": true,
+                    "value": "Browser"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Tool Remove",
+            "publish_as": "action",
+            "rank": 8,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGx",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AGx\":{\"caption\":\"Agent | Tool Remove\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_tool_remove",
+            "wrap_error": true
+        },
+        "AHB": {
+            "0": "A",
+            "1": "H",
+            "2": "A",
+            "body": "{\n    \"model\": \"<model>\",\n    \"user_id\": \"<user_id>\",\n    \"query\": \"<query>\"\n\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1690052107242x424346776758648800"
+                },
+                "ADn": {
+                    "allow_blank": false,
+                    "doc": "A unique string identifier that you can pass to distinguish your individual users and their sessions.",
+                    "key": "user_id",
+                    "private": true,
+                    "value": "user_id"
+                },
+                "AEq": {
+                    "doc": "The question to pass to the model.",
+                    "key": "query",
+                    "private": true,
+                    "value": "Hey there!"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Agent | Create (General-Purpose)",
+            "params": {
+                "AGs": {
+                    "allow_blank": true,
+                    "doc": "(optional) Models created via the API will automatically be assigned to the default workspace, unless a specific workspace parameter is provided. Workspace can be set as default in Fine-Tuner dashboard under Settings -> Workspace.",
+                    "key": "workspace_id",
+                    "optional": true,
+                    "private": true,
+                    "value": "1687135543812x694317602230583900"
+                },
+                "AGt": {
+                    "allow_blank": true,
+                    "key": "name",
+                    "optional": true,
+                    "private": true,
+                    "value": "demo"
+                }
+            },
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AHB",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AHB\":{\"caption\":\"Agent | Create (General-Purpose)\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.model\":{\"ret_value\":\"text\",\"caption\":\"body response model\",\"sample_value\":\"1694105528943x468622864119725000\",\"path\":[\"body\",\"response\",\"model\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"model\\\\\\\": \\\\\\\"1694105528943x468622864119725000\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_create_general",
+            "wrap_error": true
+        },
+        "AHD": {
+            "0": "A",
+            "1": "H",
+            "2": "C",
+            "body": "{\n    \"model\": \"<model>\",\n    \"temperature\": <temperature>,\n    \"llm\": \"<llm>\",\n    \"full_prompt\": \"<full_prompt>\",\n    \"image\": \"<image_url>\",\n    \"name\": \"<name>\"\n        \n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1694105528943x468622864119725000"
+                },
+                "AGT": {
+                    "allow_blank": true,
+                    "doc": "One of the following:\n- anthropic\"\n- claude-2\"\n- gpt-3.5-turbo\n- gpt-4\n- gpt-3.5-turbo-0613\n- gpt-4-0613\n- gpt-3.5-turbo-16k\n\nDefaults to \"gpt-3.5-turbo-0613\".",
+                    "key": "llm",
+                    "private": true,
+                    "value": "gpt-3.5-turbo-0613"
+                },
+                "AGU": {
+                    "allow_blank": true,
+                    "doc": "Controls the randomness of the output. Higher values result in more diverse completions, while lower values make the output more deterministic (defaults to 0).",
+                    "key": "temperature",
+                    "private": true,
+                    "value": "0.4"
+                },
+                "AHE": {
+                    "key": "full_prompt",
+                    "private": true,
+                    "value": "You are a helpful AI assistant. Your primary function is to provide accurate, concise answers to inquiries using the context provided.  Keep your responses in short length. Never produce lists, just answers.  If the answer to a user's question is not contained in the provided context, you should respond with 'Answer not available in context.'"
+                },
+                "AHj": {
+                    "allow_blank": true,
+                    "key": "name",
+                    "private": true,
+                    "value": "test"
+                },
+                "AHk": {
+                    "allow_blank": true,
+                    "key": "image_url",
+                    "private": true,
+                    "value": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F506c3aafb45ff073812bdd978c05f8c1.cdn.bubble.io%2Ff1694093513704x616487902918003200%2FF0Xc9QeWAAE6dt4.png?w=96&h=96&auto=compress&dpr=1&fit=max"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Update (General-Purpose)",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AHD",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHD\":{\"caption\":\"Agent | Update (General-Purpose)\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_edit_general",
+            "wrap_error": true
+        },
+        "AHS": {
+            "0": "A",
+            "1": "H",
+            "2": "R",
+            "body": "{\n    \"model\": \"<model>\",\n    \"name\": \"<name>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1692044741304x238360342082232670"
+                },
+                "AHF": {
+                    "key": "name",
+                    "private": true,
+                    "value": "Browser"
+                }
+            },
+            "data_type": "JSON",
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AHX": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Agent | Get Logs",
+            "params": {
+                "AHU": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1691679123700x329286864853008400"
+                },
+                "AHV": {
+                    "allow_blank": true,
+                    "key": "from",
+                    "optional": true,
+                    "private": true,
+                    "value": "2023-09-02"
+                },
+                "AHW": {
+                    "allow_blank": true,
+                    "key": "to",
+                    "optional": true,
+                    "private": true,
+                    "value": "2023-09-04"
+                }
+            },
+            "publish_as": "data",
+            "rank": 9,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AHS",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AHS\":{\"caption\":\"Agent | Get Log\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.logs\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AHS.body.logs\",\"caption\":\"body logs\",\"path\":[\"body\",\"logs\"]}}},\"plugin_api.AHS.body.logs\":{\"caption\":\"Agent | Get Logs body log\",\"fields\":{\"_p_created_date\":{\"ret_value\":\"text\",\"caption\":\"created_date\",\"sample_value\":\"2023-09-04T10:04:14.025Z\",\"path\":[\"created_date\"]},\"_p_completion\":{\"ret_value\":\"text\",\"caption\":\"completion\",\"sample_value\":\"You're welcome, Albert! If you have any questions about our products or if you'd like to know more about how we can help improve your sleep, feel free to ask.\",\"path\":[\"completion\"]},\"_p_prompt\":{\"ret_value\":\"text\",\"caption\":\"prompt\",\"sample_value\":\"cool thanks\",\"path\":[\"prompt\"]},\"_p_session_id\":{\"ret_value\":\"text\",\"caption\":\"session_id\",\"sample_value\":\"cLJpBd2jl5xNNDamjTAPrx4GQmbM\",\"path\":[\"session_id\"]},\"_p_extracted_entity\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AHS.extracted_entity\",\"caption\":\"extracted_entity\",\"path\":[\"extracted_entity\"]}}},\"plugin_api.AHS.extracted_entity\":{\"caption\":\"Agent | Get Logs extracted_entity\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"email\",\"path\":[\"type\"]},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"sample_value\":\"albert@fine-tuner.ai\",\"path\":[\"value\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_log",
+            "wrap_error": true
+        },
+        "AHf": {
+            "0": "A",
+            "1": "H",
+            "2": "e",
+            "body": "{\n    \"model\": \"<model>\",\n    \"share_memory_id\": \"<share_memory_id>\",\n\n    \"enable\": \"<enable>\"\n\n}",
+            "body_params": {
+                "ACp": {
+                    "doc": "The identifier of the fine-tuned model.",
+                    "key": "model",
+                    "private": true,
+                    "value": "1694091332238x836352412198907900"
+                },
+                "AHg": {
+                    "key": "share_memory_id",
+                    "private": true,
+                    "value": "1ad27abd-8fe6-4d1a-985f-763f2f8668ab"
+                },
+                "AHh": {
+                    "key": "enable",
+                    "private": true,
+                    "value": "true"
+                }
+            },
+            "doc_link": "https://help.fine-tuner.ai/fine-tuner.ai/deployment/how-to-deploy/plugins/bubble",
+            "get_headers": false,
+            "headers": {
+                "AAZ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Agent | Shared Memory",
+            "publish_as": "action",
+            "rank": 20,
+            "ret_value": "api.1679418458613x719166772080017400.plugin_api.AHf",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHf\":{\"caption\":\"TEST Agent | Shared Memory\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {}\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_shared_memory",
+            "wrap_error": true
+        }
+    },
+    "human": "Fine-Tuner",
+    "token_param_name": "Authorization"
+}

@@ -1,0 +1,84 @@
+{
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 10,
+        "width": 10
+    },
+    "display": "Fine-Tuner Streaming",
+    "events": {
+        "AHx": {
+            "caption": "generation is finished",
+            "doc": "Triggers when AI is finished generating the output of content or function",
+            "name": "finished"
+        },
+        "AHy": {
+            "caption": "error happens",
+            "doc": "Triggers when AI is generates a error",
+            "name": "error"
+        }
+    },
+    "icon": "ion-chatbubble-working",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AHr": {
+            "caption": "Generated",
+            "doc": "Contains the streamed generated content",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "content",
+            "value": "text"
+        },
+        "AHs": {
+            "caption": "Error Message",
+            "doc": "Contains error message returned by the AI server",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "error",
+            "value": "text"
+        },
+        "AHt": {
+            "caption": "Streaming Status",
+            "doc": "Contains the state of the stream",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "streaming",
+            "value": "boolean"
+        },
+        "AHu": {
+            "caption": "Error Status",
+            "doc": "Contains the status text returned by the AI server",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "error_status_text",
+            "value": "text"
+        },
+        "AHv": {
+            "caption": "Error Status Code",
+            "doc": "Contains the error http status code returned by the AI server",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "error_status_code",
+            "value": "number"
+        },
+        "AHw": {
+            "caption": "generated_content",
+            "doc": "Contains if content was generated",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "generated_content",
+            "value": "boolean"
+        }
+    }
+}

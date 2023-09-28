@@ -1,0 +1,58 @@
+{
+    "category": "plugins",
+    "display": "Generate AI Token",
+    "fields": {
+        "AIC": {
+            "caption": "query",
+            "default_val": "What would you like to ask?",
+            "doc": "Query to pass to the AI Agent",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "params",
+            "rank": 0,
+            "value": "text"
+        },
+        "AID": {
+            "caption": "Expiration time of AI Token in seconds",
+            "default_val": 60,
+            "doc": "Time in seconds for AI Token to expire if unused",
+            "editor": "StaticNumber",
+            "name": "expiration_time",
+            "rank": 1
+        },
+        "AIE": {
+            "caption": "AI Api Key",
+            "doc": "Dynamic Api Key to pass to the AI (will be encrypted)",
+            "editor": "DynamicValue",
+            "name": "api_key",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AIF": {
+            "caption": "Encrypt",
+            "default_val": false,
+            "doc": "By default only the api_key is encrypted. If you like to encrypt everything (including json params and ai url), enable encrypt. Can be a little bit slower to execute.",
+            "editor": "DynamicValue",
+            "name": "encrypt",
+            "rank": 3,
+            "value": "boolean"
+        }
+    },
+    "return_value": {
+        "AIG": {
+            "caption": "AI Token",
+            "name": "ai_token",
+            "rank": 0,
+            "value": "text"
+        },
+        "AIH": {
+            "caption": "error",
+            "name": "error",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

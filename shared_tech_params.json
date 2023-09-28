@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "alpha_opt_in": true,
+        "plugin_api_version": "4",
+        "use_jquery": true
+    },
+    "shared_keys": {
+        "AHn": {
+            "caption": "CLIENT_ID",
+            "type": "client_safe"
+        },
+        "AHo": {
+            "caption": "CLIENT_SECRET",
+            "type": "secure"
+        },
+        "AHp": {
+            "caption": "AI_API_KEY",
+            "type": "secure"
+        }
+    }
+}
