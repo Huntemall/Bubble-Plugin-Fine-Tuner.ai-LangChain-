@@ -7,26 +7,26 @@
         "height": 10,
         "width": 10
     },
-    "display": "Fine-Tuner Streaming",
+    "display": "Finetuner Stream",
     "events": {
-        "AHx": {
+        "AHv": {
             "caption": "generation is finished",
             "doc": "Triggers when AI is finished generating the output of content or function",
             "name": "finished"
         },
-        "AHy": {
+        "AHw": {
             "caption": "error happens",
             "doc": "Triggers when AI is generates a error",
             "name": "error"
         }
     },
-    "icon": "ion-chatbubble-working",
+    "icon": "ion-android-checkbox-blank",
     "property_applications": {
         "MinWidth": true,
         "resizable": true
     },
     "states": {
-        "AHr": {
+        "AHp": {
             "caption": "Generated",
             "doc": "Contains the streamed generated content",
             "initialization_code": {
@@ -35,7 +35,7 @@
             "name": "content",
             "value": "text"
         },
-        "AHs": {
+        "AHq": {
             "caption": "Error Message",
             "doc": "Contains error message returned by the AI server",
             "initialization_code": {
@@ -44,7 +44,7 @@
             "name": "error",
             "value": "text"
         },
-        "AHt": {
+        "AHr": {
             "caption": "Streaming Status",
             "doc": "Contains the state of the stream",
             "initialization_code": {
@@ -53,7 +53,7 @@
             "name": "streaming",
             "value": "boolean"
         },
-        "AHu": {
+        "AHs": {
             "caption": "Error Status",
             "doc": "Contains the status text returned by the AI server",
             "initialization_code": {
@@ -62,7 +62,7 @@
             "name": "error_status_text",
             "value": "text"
         },
-        "AHv": {
+        "AHt": {
             "caption": "Error Status Code",
             "doc": "Contains the error http status code returned by the AI server",
             "initialization_code": {
@@ -71,7 +71,7 @@
             "name": "error_status_code",
             "value": "number"
         },
-        "AHw": {
+        "AHu": {
             "caption": "generated_content",
             "doc": "Contains if content was generated",
             "initialization_code": {

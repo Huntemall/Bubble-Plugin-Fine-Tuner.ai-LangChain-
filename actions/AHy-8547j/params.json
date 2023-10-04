@@ -2,51 +2,59 @@
     "category": "plugins",
     "display": "Generate AI Token",
     "fields": {
-        "AIC": {
-            "caption": "query",
+        "AHz": {
+            "caption": "Query",
             "default_val": "What would you like to ask?",
             "doc": "Query to pass to the AI Agent",
             "editor": "DynamicValue",
             "long_text": true,
-            "name": "params",
+            "name": "query",
             "rank": 0,
             "value": "text"
         },
-        "AID": {
+        "AIA": {
             "caption": "Expiration time of AI Token in seconds",
             "default_val": 60,
-            "doc": "Time in seconds for AI Token to expire if unused",
+            "doc": "Time in seconds for AI Token to expire.",
             "editor": "StaticNumber",
             "name": "expiration_time",
             "rank": 1
         },
-        "AIE": {
-            "caption": "AI Api Key",
-            "doc": "Dynamic Api Key to pass to the AI (will be encrypted)",
+        "AIB": {
+            "caption": "AI API Key",
+            "doc": "AI API Key (Bearer Token) to pass to the AI.",
             "editor": "DynamicValue",
             "name": "api_key",
             "optional": true,
             "rank": 2,
             "value": "text"
         },
-        "AIF": {
+        "AIC": {
             "caption": "Encrypt",
             "default_val": false,
-            "doc": "By default only the api_key is encrypted. If you like to encrypt everything (including json params and ai url), enable encrypt. Can be a little bit slower to execute.",
+            "doc": "By default only the API Key is encrypted. If you'd like to encrypt everything (including any JSON params and the AI URL), then set this to Yes. Can be a little bit slower to execute.",
             "editor": "DynamicValue",
             "name": "encrypt",
             "rank": 3,
             "value": "boolean"
+        },
+        "AID": {
+            "caption": "Client Secret",
+            "doc": "Supply the user's generated Client Secret. It will be used as the passphrase to encrypt the AI API Key.",
+            "editor": "DynamicValue",
+            "name": "client_secret",
+            "rank": 4,
+            "value": "text"
         }
     },
     "return_value": {
-        "AIG": {
-            "caption": "AI Token",
+        "AIE": {
+            "caption": "ai_token",
             "name": "ai_token",
             "rank": 0,
             "value": "text"
         },
-        "AIH": {
+        "AIF": {
             "caption": "error",
             "name": "error",
             "rank": 1,

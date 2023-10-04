@@ -360,7 +360,7 @@
                     "doc": "The identifier of the fine-tuned model.",
                     "key": "model",
                     "private": true,
-                    "value": "1694437494427x570202874199408640"
+                    "value": "1693823952426x446229083458371600"
                 },
                 "ADn": {
                     "allow_blank": false,
@@ -392,7 +392,7 @@
             "publish_as": "action",
             "rank": 4,
             "ret_value": "api.1679418458613x719166772080017400.plugin_api.AEl",
-            "should_reinitialize": false,
+            "should_reinitialize": true,
             "types": "{\"plugin_api.AEl\":{\"caption\":\"Agent | Inference\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.answer\":{\"ret_value\":\"text\",\"caption\":\"body response answer\",\"sample_value\":\"Great, with a loan amount of 500k and a term of 10 years, we can definitely find a suitable option for you. Let's discuss further details to ensure we find the best fit for your needs. \",\"path\":[\"body\",\"response\",\"answer\"]},\"_p_body.response.recommendations\":{\"ret_value\":\"list.text\",\"caption\":\"body response recommendations\",\"sample_value\":\"\\\"Max Loan Amount\\\": \\\"20000000\\\"\",\"path\":[\"body\",\"response\",\"recommendations\"]},\"_p_body.response.conversation_stage\":{\"ret_value\":\"text\",\"caption\":\"body response conversation_stage\",\"sample_value\":\"1\",\"path\":[\"body\",\"response\",\"conversation_stage\"]},\"_p_body.response.conversation_stage_description\":{\"ret_value\":\"text\",\"caption\":\"body response conversation_stage_description\",\"sample_value\":\"demo\",\"path\":[\"body\",\"response\",\"conversation_stage_description\"]},\"_p_body.response.resources\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AEl.body.response.resources\",\"caption\":\"body response resources\",\"path\":[\"body\",\"response\",\"resources\"]},\"_p_body.response.tools_used\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AEl.body.response.tools_used\",\"caption\":\"body response tools_used\",\"path\":[\"body\",\"response\",\"tools_used\"]},\"_p_body.response.sources\":{\"ret_value\":\"list.api.1679418458613x719166772080017400.plugin_api.AEl.body.response.sources\",\"caption\":\"body response sources\",\"path\":[\"body\",\"response\",\"sources\"]}}},\"plugin_api.AEl.body.response.resources\":{\"caption\":\"Agent | Inference body response resource\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"audio\",\"path\":[\"type\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://storage.googleapis.com/audio-files-text-to-speech/1be04f4d-76ec-4170-b620-d7ff76d14def.wav\",\"path\":[\"url\"]}}},\"plugin_api.AEl.body.response.tools_used\":{\"caption\":\"Agent | Inference body response tools_used\",\"fields\":{\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Browser\",\"path\":[\"name\"]},\"_p_payload.method\":{\"ret_value\":\"text\",\"caption\":\"payload method\",\"sample_value\":\"search_engine\",\"path\":[\"payload\",\"method\"]},\"_p_payload.query\":{\"ret_value\":\"text\",\"caption\":\"payload query\",\"sample_value\":\"What is the definition of eigenlayer?\",\"path\":[\"payload\",\"query\"]},\"_p_payload.result\":{\"ret_value\":\"text\",\"caption\":\"payload\",\"sample_value\":\"EigenLayer is a middleware that is being built on the Ethereum network to commoditize decentralized trust. Protocols that look to integrate EigenLayer will be able to leverage Ethereum's highly secure trust network. EigenLayer is an innovative protocol built on the Ethereum blockchain, introducing the concept of 'restaking'. Restaking is a novel primitive in crypto-economic security, which allows for the reuse of staked ETH or liquid staking tokens (LST) on the consensus layer. EigenLayer is a restaking protocol for Ethereum that enables existing ETH stakers to opt in to validating new software modules (e.g. consensus protocols, data availability layers, oracles,... ⚙️ Eigenlayer is a middleware protocol that introduces restaking. Eigenlayer allows the reuse of ETH in staking to secure other protocols on Ethereum. 🧑‍💻 The technological pillars behind Eigenlayer are pooled security through restaking and an open marketplace mechanism. Summary EigenLayer is a protocol built on Ethereum that introduces restaking, a new primitive in cryptoeconomic security. This primitive enables the rehypothetication of $ETH on the consensus layer.\",\"path\":[\"payload\",\"result\"]}}},\"plugin_api.AEl.body.response.sources\":{\"caption\":\"Agent | Inference body response source\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"https://e32d51af3de97804b3f8dcfcb7e70a04.cdn.bubble.io/f1693838324765x325002871815536240/whitepaper.pdf\",\"path\":[\"source\"]},\"_p_page_row\":{\"ret_value\":\"text\",\"caption\":\"page_row\",\"sample_value\":\"0\",\"path\":[\"page_row\"]}}}}",
             "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_inference",
             "wrap_error": true
@@ -584,7 +584,7 @@
             "publish_as": "action",
             "rank": 0,
             "ret_value": "api.1679418458613x719166772080017400.plugin_api.AGA",
-            "should_reinitialize": false,
+            "should_reinitialize": true,
             "types": "{\"plugin_api.AGA\":{\"caption\":\"Agent | Create (Brand-Centric)\",\"fields\":{\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"success\",\"path\":[\"body\",\"status\"]},\"_p_body.response.model\":{\"ret_value\":\"text\",\"caption\":\"body response model\",\"sample_value\":\"1694105647939x828019959682214000\",\"path\":[\"body\",\"response\",\"model\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\n    \\\\\\\"status\\\\\\\": \\\\\\\"success\\\\\\\",\\\\n    \\\\\\\"response\\\\\\\": {\\\\n        \\\\\\\"model\\\\\\\": \\\\\\\"1694105647939x828019959682214000\\\\\\\"\\\\n    }\\\\n}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
             "url": "https://fine-tuner.ai/api/1.1/wf/v2_chatbot_salesgpt_create",
             "wrap_error": true
@@ -599,7 +599,7 @@
                     "doc": "The identifier of the fine-tuned model.",
                     "key": "model",
                     "private": true,
-                    "value": "1694105647939x828019959682214000"
+                    "value": "1696425397916x938616722362204200"
                 },
                 "AGD": {
                     "allow_blank": false,
@@ -648,7 +648,7 @@
                     "doc": "One of the following:\n- anthropic\"\n- claude-2\"\n- gpt-3.5-turbo\n- gpt-4\n- gpt-3.5-turbo-0613\n- gpt-4-0613\n- gpt-3.5-turbo-16k\n\nDefaults to \"gpt-3.5-turbo-0613\".",
                     "key": "llm",
                     "private": true,
-                    "value": "anthropic"
+                    "value": "gpt-3.5-turbo"
                 },
                 "AGU": {
                     "allow_blank": true,

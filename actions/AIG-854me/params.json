@@ -1,0 +1,39 @@
+{
+    "category": "plugins",
+    "display": "Generate Keys",
+    "fields": {
+        "AIH": {
+            "caption": "This action uses NodeJS Crypto to generate a Client ID, a Client Secret and an encrypted hash of the Client Secret.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        },
+        "AII": {
+            "caption": "Run and save this data for any users who you're generating the keys for.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "AIJ": {
+            "caption": "client_id",
+            "name": "client_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AIK": {
+            "caption": "client_secret",
+            "name": "client_secret",
+            "rank": 1,
+            "value": "text"
+        },
+        "AIL": {
+            "caption": "encrypted_secret",
+            "name": "encrypted_secret",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
