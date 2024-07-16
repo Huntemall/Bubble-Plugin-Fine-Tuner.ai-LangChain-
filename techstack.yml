@@ -1,0 +1,56 @@
+repo_name: Huntemall/Bubble-Plugin-Fine-Tuner.ai-LangChain-
+report_id: 12498b93b2d5439ca9c697a81b9abc9c
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-16T09:53:42+00:00'
+requested_by: albertastabatsyan
+provider: github
+branch: main
+detected_tools_count: 4
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/Huntemall/Bubble-Plugin-Fine-Tuner.ai-LangChain-
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Huntemall/Bubble-Plugin-Fine-Tuner.ai-LangChain-
+  detection_source: Repo Metadata
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/Huntemall/Bubble-Plugin-Fine-Tuner.ai-LangChain-/blob/main/actions/AHy-8547j/package.json
+  detection_source: actions/AHy-8547j/package.json
+  last_updated_by: albertastabatsyan
+  last_updated_on: 2023-09-28 18:55:58.000000000 Z
+- name: jsonwebtoken
+  description: JSON Web Token implementation
+  package_url: https://www.npmjs.com/jsonwebtoken
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16155/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/Huntemall/Bubble-Plugin-Fine-Tuner.ai-LangChain-/blob/main/actions/AHy-8547j/package.json
+  detection_source: actions/AHy-8547j/package.json
+  last_updated_by: albertastabatsyan
+  last_updated_on: 2023-09-28 18:55:58.000000000 Z
